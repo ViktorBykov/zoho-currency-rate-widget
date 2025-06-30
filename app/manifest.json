@@ -1,0 +1,17 @@
+{
+  "widget_name": "currency_widget",
+  "display_name": "Currency Rate",
+  "description": "Курс НБУ + Курс угоди",
+  "location": {
+    "type": "relatedlist",
+    "target_module": "Deals"
+  },
+  "scope": [
+    "ZohoCRM.modules.ALL"
+  ],
+  "components": [
+    {
+      "file": "index.html"
+    }
+  ]
+}
