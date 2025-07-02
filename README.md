@@ -20,24 +20,24 @@
 
     Code -> Download ZIP
 
-2. Створити поле у модулі Deals:
+2. Створити поле у модулі Deals:<br>
    Settings -> Modules and Fields -> Deals -> Fields -> Create and Edit Fields -> Deals
 
     • Тип поля: Decimal<br>
     • Назва: Курс валют
 
-3. Встановити API Name для даного поля:
+3. Встановити API Name для даного поля:<br>
    Settings -> APIs and SDKs -> API names -> Deals
 
     • Field Label: Курс валют<br>
     • API name: Currency_Rate
 
-4. Створити новий модуль:
+4. Створити новий модуль:<br>
    Settings -> Modules and Fields -> Create New Module -> Exchange Rate History
 
     • Module name: Exchange Rate History
 
-5. Створити поля у модулі Exchange Rate History:
+5. Створити поля у модулі Exchange Rate History:<br>
    Settings -> Modules and Fields -> Deals -> Fields -> Create and Edit Fields -> Exchange Rate History
 
     • тип поля: Loolup, назва поля: Deal, Lookup Module: Deals<br>
@@ -46,13 +46,13 @@
     • тип поля: Picklist, назва поля: Rate Source, Pick List Option: НБУ, Інше<br>
     • тип поля: Decimal, назва поля: Difference %<br>
 
-6. Встановити API Name поля Deal модуля Exchange Rate History:
+6. Встановити API Name поля Deal модуля Exchange Rate History:<br>
    Settings -> APIs and SDKs -> API names -> Exchange Rate History
 
     • Field Label: Deal<br>
     • API name: Deal
 
-7. Підключити віджет:
+7. Підключити віджет:<br>
    Modules -> Deals -> Add Related List -> Widgets -> Create New Widget
 
     • Name: Currency Rate Widget<br>
@@ -67,9 +67,10 @@
 
 ## 🚨 Обробка помилок
 
-    • Неможливо отримати курс НБУ<br>
-    • Неможливо оновити курс в CRM<br>
-    • Відсутні дані угоди<br>
+-   Неможливо отримати курс НБУ
+-   Неможливо оновити курс в CRM
+-   Відсутні дані угоди
+-   Невідома помилка
 
 ## 📅 Історія змін курсу в угоді
 
