@@ -15,21 +15,21 @@
 
 ## ⚙️ Встановлення
 
-1. Завантажити zip файл з репозиторію GitHub:
-   URL: https://github.com/ViktorBykov/zoho-currency-rate-widget
+1. Завантажити zip файл з репозиторію GitHub:<br>
+   URL: https://github.com/ViktorBykov/zoho-currency-rate-widget<br>
 
     Code -> Download ZIP
 
 2. Створити поле у модулі Deals:
    Settings -> Modules and Fields -> Deals -> Fields -> Create and Edit Fields -> Deals
 
-    • Тип поля: Decimal
+    • Тип поля: Decimal<br>
     • Назва: Курс валют
 
 3. Встановити API Name для даного поля:
    Settings -> APIs and SDKs -> API names -> Deals
 
-    • Field Label: Курс валют
+    • Field Label: Курс валют<br>
     • API name: Currency_Rate
 
 4. Створити новий модуль:
@@ -40,25 +40,25 @@
 5. Створити поля у модулі Exchange Rate History:
    Settings -> Modules and Fields -> Deals -> Fields -> Create and Edit Fields -> Exchange Rate History
 
-    • тип поля: Loolup, назва поля: Deal, Lookup Module: Deals
-    • тип поля: Decimal, назва поля: Rate
-    • тип поля: DateTime, назва поля: Date
-    • тип поля: Picklist, назва поля: Rate Source, Pick List Option: НБУ, Інше
-    • тип поля: Decimal, назва поля: Difference %
+    • тип поля: Loolup, назва поля: Deal, Lookup Module: Deals<br>
+    • тип поля: Decimal, назва поля: Rate<br>
+    • тип поля: DateTime, назва поля: Date<br>
+    • тип поля: Picklist, назва поля: Rate Source, Pick List Option: НБУ, Інше<br>
+    • тип поля: Decimal, назва поля: Difference %<br>
 
 6. Встановити API Name поля Deal модуля Exchange Rate History:
    Settings -> APIs and SDKs -> API names -> Exchange Rate History
 
-    • Field Label: Deal
+    • Field Label: Deal<br>
     • API name: Deal
 
 7. Підключити віджет:
    Modules -> Deals -> Add Related List -> Widgets -> Create New Widget
 
-    • Name: Currency Rate Widget
-    • Type: Related List
-    • Hosting: Zoho
-    • Index Page: /index.html
+    • Name: Currency Rate Widget<br>
+    • Type: Related List<br>
+    • Hosting: Zoho<br>
+    • Index Page: /index.html<br>
     • File Upload: Вибрати завантажений zip архів
 
 ## 🌍 Мови
@@ -67,10 +67,9 @@
 
 ## 🚨 Обробка помилок
 
--   Неможливо отримати курс НБУ
--   Неможливо оновити курс в CRM
--   Відсутні дані угоди
--   Невідома помилка
+    • Неможливо отримати курс НБУ<br>
+    • Неможливо оновити курс в CRM<br>
+    • Відсутні дані угоди<br>
 
 ## 📅 Історія змін курсу в угоді
 
