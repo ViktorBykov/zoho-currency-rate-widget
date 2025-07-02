@@ -1,7 +1,4 @@
-import {
-	searchHistoryRecords,
-	insertHistoryRecord,
-} from '../services/apiServiceZoho.js';
+import { searchHistoryRecords } from '../services/apiServiceZoho.js';
 import { translate } from '../i18n/i18nService.js';
 
 export async function loadHistory(recordId) {
@@ -37,7 +34,6 @@ export async function loadHistory(recordId) {
 	}
 }
 
-// convert iso date format to "dd.mm.yyyy HH:mm"
 function formatDate(iso) {
 	const d = new Date(iso);
 	const pad = (n) => String(n).padStart(2, '0');

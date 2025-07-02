@@ -1,8 +1,4 @@
-import {
-	translate,
-	translateElementsByID,
-	getLanguage,
-} from '../i18n/i18nService.js';
+import { translate, translateElementsByID } from '../i18n/i18nService.js';
 import {
 	insertHistoryRecord,
 	updateDealCurrencyRate,
@@ -16,8 +12,6 @@ export function calculateDifference(dealRate, nbuRate) {
 }
 
 export function updateUI(nbuRate, dealRate, recordId) {
-	// showError(''); // ??????
-
 	document.getElementById('nbuRate').textContent = nbuRate.toFixed(2);
 	document.getElementById('dealRate').textContent = dealRate.toFixed(2);
 
@@ -44,7 +38,7 @@ export function updateUI(nbuRate, dealRate, recordId) {
 					Name: `${translate(
 						'historyRecordName'
 					)} ${new Date().toLocaleDateString()}`,
-					Lookup_2: recordId,
+					Deal: recordId,
 					Rate: nbuRate,
 					Date: new Date().toISOString().replace(/\.\d{3}Z$/, ''),
 					Difference: parseFloat((nbuRate - oldRate).toFixed(2)),
@@ -86,7 +80,6 @@ export function onChangeLanguage() {
 	];
 	translateElementsByID(elementsID);
 
-	// loading texts
 	const nbuEl = document.getElementById('nbuRate');
 	const dealEl = document.getElementById('dealRate');
 

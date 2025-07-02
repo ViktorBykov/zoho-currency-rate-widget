@@ -24,7 +24,7 @@ export async function searchHistoryRecords(recordId) {
 	return await ZOHO.CRM.API.searchRecord({
 		Entity: 'Exchange_Rate_History',
 		Type: 'criteria',
-		Query: `(Lookup_2.id:equals:${recordId})`,
+		Query: `(Deal.id:equals:${recordId})`,
 		delay: false,
 	});
 }

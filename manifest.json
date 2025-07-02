@@ -1,6 +1,6 @@
 {
   "widget_name": "currency_widget",
-  "display_name": "Currency Rate",
+  "display_name": "Currency Rate NEW",
   "description": "Курс НБУ + Курс угоди",
   "location": {
     "type": "relatedlist",
